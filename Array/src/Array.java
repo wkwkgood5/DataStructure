@@ -114,6 +114,20 @@ public class Array {
         return remove(size-1);
     }
 
+    //删除某一元素e
+    public void removeElement(int e){
+//        int index = findIndex(e);
+//        remove(index);
+        for(int i=0; i<size; i++){
+            if (data[i]==e){
+                for (int j=i+1; j<size; j++){
+                    data[j-1]= data[j];
+                }
+                size--;
+            }
+        }
+    }
+
     @Override
     public String toString(){
         StringBuilder res = new StringBuilder();
