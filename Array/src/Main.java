@@ -24,7 +24,7 @@ public class Main {
         System.out.println(array);
 
         array.remove(2);
-        System.out.println(array);
+        System.out.println(array);//
 
         array.removeElement(100);//
         System.out.println(array);//
